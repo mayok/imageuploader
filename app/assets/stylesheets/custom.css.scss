@@ -1,0 +1,28 @@
+/* header */
+body {
+  margin-top: 80px;
+  padding-top: 20px;
+}
+
+.form-group {
+  li {
+    float: left;
+    &:first-child {
+      border-right: 1px solid #393939;
+      padding-right: 4px;
+      margin-right: 4px;
+    }
+  }
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+
+/* typography */
+h1, h2, h3, h4, h5 {
+  line-height: 1;
+  margin:0;
+}
