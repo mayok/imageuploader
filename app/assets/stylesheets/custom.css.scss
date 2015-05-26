@@ -43,3 +43,11 @@ input:not([type="submit"]) {
   padding: 4px 0;
   box-sizing: border-box;
 }
+
+/* images */
+.thumbnail {
+  li {
+    float: left;
+    margin: 0 2px;
+  }
+}

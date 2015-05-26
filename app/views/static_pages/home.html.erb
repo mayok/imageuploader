@@ -1,11 +1,18 @@
 <div class="text-center jumbtron">
-  <span>ここにファイルが表示される</span>
+  <% if @images.any? %>
+  <% else %>
+    <span>ここにファイルが表示される</span>
+  <% end %>
 </div>
 <div class="row">
   <div class="col-md-2">
+    <ul class="thumbnail">
     <% @images.each do |image| %>
-      <%= image_tag image.picture.url if image.picture? %>
+      <li><a href="#">
+        <%= image_tag image.picture.thumb.url if image.picture? %>
+      </a></li>
     <% end %>
+    </ul>
   </div>
 </div>
 <div class="row">
