@@ -1,0 +1,16 @@
+/usr/bin/ruby20 -r ./siteconf20150526-6730-1kjkfxr.rb extconf.rb
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.so
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.so ./.gem.20150526-6730-1x52ap1/byebug
+installing default byebug libraries

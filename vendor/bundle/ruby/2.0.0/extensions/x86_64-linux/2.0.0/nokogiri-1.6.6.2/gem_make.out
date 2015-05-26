@@ -1,0 +1,716 @@
+/usr/bin/ruby20 -r ./siteconf20150526-6730-mahad0.rb extconf.rb --use-system-libraries
+checking if the C compiler accepts ... yes
+Building nokogiri using system libraries.
+checking for xmlParseDoc() in libxml/parser.h... yes
+checking for xsltParseStylesheetDoc() in libxslt/xslt.h... yes
+checking for exsltFuncRegister() in libexslt/exslt.h... yes
+checking for xmlHasFeature()... yes
+checking for xmlFirstElementChild()... yes
+checking for xmlRelaxNGSetParserStructuredErrors()... yes
+checking for xmlRelaxNGSetParserStructuredErrors()... yes
+checking for xmlRelaxNGSetValidStructuredErrors()... yes
+checking for xmlSchemaSetValidStructuredErrors()... yes
+checking for xmlSchemaSetParserStructuredErrors()... yes
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling html_document.c
+In file included from /usr/include/ruby-2.0.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./html_document.h:4,
+                 from html_document.c:1:
+/usr/include/ruby-2.0.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:32: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:47: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                               ^
+compiling html_element_description.c
+In file included from /usr/include/ruby-2.0.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./html_element_description.h:4,
+                 from html_element_description.c:1:
+/usr/include/ruby-2.0.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:32: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:47: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                               ^
+In file included from /usr/include/ruby-2.0.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./html_element_description.h:4,
+                 from html_element_description.c:1:
+html_element_description.c: In function ‘get_description’:
+html_element_description.c:252:40: warning: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+   return Data_Wrap_Struct(klass, 0, 0, (void *)description);
+                                        ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:1008:35: note: in definition of macro ‘Data_Wrap_Struct’
+     rb_data_object_alloc((klass),(sval),(RUBY_DATA_FUNC)(mark),(RUBY_DATA_FUNC)(free))
+                                   ^
+compiling html_entity_lookup.c
+In file included from /usr/include/ruby-2.0.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./html_entity_lookup.h:4,
+                 from html_entity_lookup.c:1:
+/usr/include/ruby-2.0.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:32: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:47: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                               ^
+compiling html_sax_parser_context.c
+In file included from /usr/include/ruby-2.0.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./html_sax_parser_context.h:4,
+                 from html_sax_parser_context.c:1:
+/usr/include/ruby-2.0.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:32: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:47: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                               ^
+compiling html_sax_push_parser.c
+In file included from /usr/include/ruby-2.0.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./html_sax_push_parser.h:4,
+                 from html_sax_push_parser.c:1:
+/usr/include/ruby-2.0.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:32: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:47: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                               ^
+compiling nokogiri.c
+In file included from /usr/include/ruby-2.0.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from nokogiri.c:1:
+/usr/include/ruby-2.0.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:32: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:47: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                               ^
+compiling xml_attr.c
+In file included from /usr/include/ruby-2.0.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_attr.h:4,
+                 from xml_attr.c:1:
+/usr/include/ruby-2.0.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:32: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:47: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                               ^
+compiling xml_attribute_decl.c
+In file included from /usr/include/ruby-2.0.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_attribute_decl.h:4,
+                 from xml_attribute_decl.c:1:
+/usr/include/ruby-2.0.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:32: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:47: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                               ^
+compiling xml_cdata.c
+In file included from /usr/include/ruby-2.0.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_cdata.h:4,
+                 from xml_cdata.c:1:
+/usr/include/ruby-2.0.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:32: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:47: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                               ^
+compiling xml_comment.c
+In file included from /usr/include/ruby-2.0.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_comment.h:4,
+                 from xml_comment.c:1:
+/usr/include/ruby-2.0.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:32: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:47: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                               ^
+compiling xml_document.c
+In file included from /usr/include/ruby-2.0.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_document.h:4,
+                 from xml_document.c:1:
+/usr/include/ruby-2.0.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:32: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:47: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                               ^
+xml_document.c: In function ‘set_encoding’:
+xml_document.c:182:12: warning: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+       free((char *) doc->encoding); /* this may produce a gcc cast warning */
+            ^
+xml_document.c: In function ‘canonicalize’:
+xml_document.c:537:15: warning: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+       ns[i] = (xmlChar*) ptr;
+               ^
+compiling xml_document_fragment.c
+In file included from /usr/include/ruby-2.0.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_document_fragment.h:4,
+                 from xml_document_fragment.c:1:
+/usr/include/ruby-2.0.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:32: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:47: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                               ^
+compiling xml_dtd.c
+In file included from /usr/include/ruby-2.0.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_dtd.h:4,
+                 from xml_dtd.c:1:
+/usr/include/ruby-2.0.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:32: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:47: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                               ^
+compiling xml_element_content.c
+In file included from /usr/include/ruby-2.0.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_element_content.h:4,
+                 from xml_element_content.c:1:
+/usr/include/ruby-2.0.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:32: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:47: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                               ^
+compiling xml_element_decl.c
+In file included from /usr/include/ruby-2.0.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_element_decl.h:4,
+                 from xml_element_decl.c:1:
+/usr/include/ruby-2.0.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:32: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:47: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                               ^
+compiling xml_encoding_handler.c
+In file included from /usr/include/ruby-2.0.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_encoding_handler.h:4,
+                 from xml_encoding_handler.c:1:
+/usr/include/ruby-2.0.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:32: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:47: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                               ^
+compiling xml_entity_decl.c
+In file included from /usr/include/ruby-2.0.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_entity_decl.h:4,
+                 from xml_entity_decl.c:1:
+/usr/include/ruby-2.0.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:32: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:47: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                               ^
+compiling xml_entity_reference.c
+In file included from /usr/include/ruby-2.0.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_entity_reference.h:4,
+                 from xml_entity_reference.c:1:
+/usr/include/ruby-2.0.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:32: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:47: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                               ^
+compiling xml_io.c
+In file included from /usr/include/ruby-2.0.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_io.h:4,
+                 from xml_io.c:1:
+/usr/include/ruby-2.0.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:32: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:47: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                               ^
+compiling xml_libxml2_hacks.c
+compiling xml_namespace.c
+In file included from /usr/include/ruby-2.0.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_namespace.h:4,
+                 from xml_namespace.c:1:
+/usr/include/ruby-2.0.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:32: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:47: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                               ^
+compiling xml_node.c
+In file included from /usr/include/ruby-2.0.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_node.h:4,
+                 from xml_node.c:1:
+/usr/include/ruby-2.0.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:32: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:47: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                               ^
+xml_node.c: In function ‘reparent_node_with’:
+xml_node.c:168:7: warning: enumeration value ‘XML_ATTRIBUTE_NODE’ not handled in switch [-Wswitch]
+       switch (reparentee->type) {
+       ^
+xml_node.c:168:7: warning: enumeration value ‘XML_ENTITY_NODE’ not handled in switch [-Wswitch]
+xml_node.c:168:7: warning: enumeration value ‘XML_DOCUMENT_NODE’ not handled in switch [-Wswitch]
+xml_node.c:168:7: warning: enumeration value ‘XML_DOCUMENT_FRAG_NODE’ not handled in switch [-Wswitch]
+xml_node.c:168:7: warning: enumeration value ‘XML_NOTATION_NODE’ not handled in switch [-Wswitch]
+xml_node.c:168:7: warning: enumeration value ‘XML_HTML_DOCUMENT_NODE’ not handled in switch [-Wswitch]
+xml_node.c:168:7: warning: enumeration value ‘XML_DTD_NODE’ not handled in switch [-Wswitch]
+xml_node.c:168:7: warning: enumeration value ‘XML_ELEMENT_DECL’ not handled in switch [-Wswitch]
+xml_node.c:168:7: warning: enumeration value ‘XML_ATTRIBUTE_DECL’ not handled in switch [-Wswitch]
+xml_node.c:168:7: warning: enumeration value ‘XML_ENTITY_DECL’ not handled in switch [-Wswitch]
+xml_node.c:168:7: warning: enumeration value ‘XML_NAMESPACE_DECL’ not handled in switch [-Wswitch]
+xml_node.c:168:7: warning: enumeration value ‘XML_XINCLUDE_START’ not handled in switch [-Wswitch]
+xml_node.c:168:7: warning: enumeration value ‘XML_XINCLUDE_END’ not handled in switch [-Wswitch]
+xml_node.c:168:7: warning: enumeration value ‘XML_DOCB_DOCUMENT_NODE’ not handled in switch [-Wswitch]
+xml_node.c:186:7: warning: enumeration value ‘XML_ATTRIBUTE_NODE’ not handled in switch [-Wswitch]
+       switch (reparentee->type) {
+       ^
+xml_node.c:186:7: warning: enumeration value ‘XML_ENTITY_NODE’ not handled in switch [-Wswitch]
+xml_node.c:186:7: warning: enumeration value ‘XML_DOCUMENT_NODE’ not handled in switch [-Wswitch]
+xml_node.c:186:7: warning: enumeration value ‘XML_DOCUMENT_TYPE_NODE’ not handled in switch [-Wswitch]
+xml_node.c:186:7: warning: enumeration value ‘XML_DOCUMENT_FRAG_NODE’ not handled in switch [-Wswitch]
+xml_node.c:186:7: warning: enumeration value ‘XML_NOTATION_NODE’ not handled in switch [-Wswitch]
+xml_node.c:186:7: warning: enumeration value ‘XML_HTML_DOCUMENT_NODE’ not handled in switch [-Wswitch]
+xml_node.c:186:7: warning: enumeration value ‘XML_DTD_NODE’ not handled in switch [-Wswitch]
+xml_node.c:186:7: warning: enumeration value ‘XML_ELEMENT_DECL’ not handled in switch [-Wswitch]
+xml_node.c:186:7: warning: enumeration value ‘XML_ATTRIBUTE_DECL’ not handled in switch [-Wswitch]
+xml_node.c:186:7: warning: enumeration value ‘XML_ENTITY_DECL’ not handled in switch [-Wswitch]
+xml_node.c:186:7: warning: enumeration value ‘XML_NAMESPACE_DECL’ not handled in switch [-Wswitch]
+xml_node.c:186:7: warning: enumeration value ‘XML_XINCLUDE_START’ not handled in switch [-Wswitch]
+xml_node.c:186:7: warning: enumeration value ‘XML_XINCLUDE_END’ not handled in switch [-Wswitch]
+xml_node.c:186:7: warning: enumeration value ‘XML_DOCB_DOCUMENT_NODE’ not handled in switch [-Wswitch]
+xml_node.c:197:7: warning: enumeration value ‘XML_ELEMENT_NODE’ not handled in switch [-Wswitch]
+       switch (reparentee->type) {
+       ^
+xml_node.c:197:7: warning: enumeration value ‘XML_ATTRIBUTE_NODE’ not handled in switch [-Wswitch]
+xml_node.c:197:7: warning: enumeration value ‘XML_CDATA_SECTION_NODE’ not handled in switch [-Wswitch]
+xml_node.c:197:7: warning: enumeration value ‘XML_ENTITY_NODE’ not handled in switch [-Wswitch]
+xml_node.c:197:7: warning: enumeration value ‘XML_PI_NODE’ not handled in switch [-Wswitch]
+xml_node.c:197:7: warning: enumeration value ‘XML_COMMENT_NODE’ not handled in switch [-Wswitch]
+xml_node.c:197:7: warning: enumeration value ‘XML_DOCUMENT_NODE’ not handled in switch [-Wswitch]
+xml_node.c:197:7: warning: enumeration value ‘XML_DOCUMENT_TYPE_NODE’ not handled in switch [-Wswitch]
+xml_node.c:197:7: warning: enumeration value ‘XML_DOCUMENT_FRAG_NODE’ not handled in switch [-Wswitch]
+xml_node.c:197:7: warning: enumeration value ‘XML_NOTATION_NODE’ not handled in switch [-Wswitch]
+xml_node.c:197:7: warning: enumeration value ‘XML_HTML_DOCUMENT_NODE’ not handled in switch [-Wswitch]
+xml_node.c:197:7: warning: enumeration value ‘XML_DTD_NODE’ not handled in switch [-Wswitch]
+xml_node.c:197:7: warning: enumeration value ‘XML_ELEMENT_DECL’ not handled in switch [-Wswitch]
+xml_node.c:197:7: warning: enumeration value ‘XML_ATTRIBUTE_DECL’ not handled in switch [-Wswitch]
+xml_node.c:197:7: warning: enumeration value ‘XML_ENTITY_DECL’ not handled in switch [-Wswitch]
+xml_node.c:197:7: warning: enumeration value ‘XML_NAMESPACE_DECL’ not handled in switch [-Wswitch]
+xml_node.c:197:7: warning: enumeration value ‘XML_XINCLUDE_START’ not handled in switch [-Wswitch]
+xml_node.c:197:7: warning: enumeration value ‘XML_XINCLUDE_END’ not handled in switch [-Wswitch]
+xml_node.c:197:7: warning: enumeration value ‘XML_DOCB_DOCUMENT_NODE’ not handled in switch [-Wswitch]
+xml_node.c:165:5: warning: enumeration value ‘XML_CDATA_SECTION_NODE’ not handled in switch [-Wswitch]
+     switch (parent->type) {
+     ^
+xml_node.c:165:5: warning: enumeration value ‘XML_ENTITY_NODE’ not handled in switch [-Wswitch]
+xml_node.c:165:5: warning: enumeration value ‘XML_PI_NODE’ not handled in switch [-Wswitch]
+xml_node.c:165:5: warning: enumeration value ‘XML_COMMENT_NODE’ not handled in switch [-Wswitch]
+xml_node.c:165:5: warning: enumeration value ‘XML_DOCUMENT_TYPE_NODE’ not handled in switch [-Wswitch]
+xml_node.c:165:5: warning: enumeration value ‘XML_NOTATION_NODE’ not handled in switch [-Wswitch]
+xml_node.c:165:5: warning: enumeration value ‘XML_DTD_NODE’ not handled in switch [-Wswitch]
+xml_node.c:165:5: warning: enumeration value ‘XML_ELEMENT_DECL’ not handled in switch [-Wswitch]
+xml_node.c:165:5: warning: enumeration value ‘XML_ATTRIBUTE_DECL’ not handled in switch [-Wswitch]
+xml_node.c:165:5: warning: enumeration value ‘XML_ENTITY_DECL’ not handled in switch [-Wswitch]
+xml_node.c:165:5: warning: enumeration value ‘XML_NAMESPACE_DECL’ not handled in switch [-Wswitch]
+xml_node.c:165:5: warning: enumeration value ‘XML_XINCLUDE_START’ not handled in switch [-Wswitch]
+xml_node.c:165:5: warning: enumeration value ‘XML_XINCLUDE_END’ not handled in switch [-Wswitch]
+xml_node.c:165:5: warning: enumeration value ‘XML_DOCB_DOCUMENT_NODE’ not handled in switch [-Wswitch]
+compiling xml_node_set.c
+In file included from /usr/include/ruby-2.0.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_node_set.h:4,
+                 from xml_node_set.c:1:
+/usr/include/ruby-2.0.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:32: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:47: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                               ^
+xml_node_set.c: In function ‘dealloc_namespace’:
+xml_node_set.c:9:13: warning: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+     xmlFree((xmlChar *)ns->href);
+             ^
+xml_node_set.c:11:13: warning: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+     xmlFree((xmlChar *)ns->prefix);
+             ^
+compiling xml_processing_instruction.c
+In file included from /usr/include/ruby-2.0.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_processing_instruction.h:4,
+                 from xml_processing_instruction.c:1:
+/usr/include/ruby-2.0.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:32: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:47: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                               ^
+compiling xml_reader.c
+In file included from /usr/include/ruby-2.0.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_reader.h:4,
+                 from xml_reader.c:1:
+/usr/include/ruby-2.0.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:32: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:47: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                               ^
+compiling xml_relax_ng.c
+In file included from /usr/include/ruby-2.0.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_relax_ng.h:4,
+                 from xml_relax_ng.c:1:
+/usr/include/ruby-2.0.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:32: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:47: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                               ^
+compiling xml_sax_parser.c
+In file included from /usr/include/ruby-2.0.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_sax_parser.h:4,
+                 from xml_sax_parser.c:1:
+/usr/include/ruby-2.0.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:32: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:47: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                               ^
+compiling xml_sax_parser_context.c
+In file included from /usr/include/ruby-2.0.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_sax_parser_context.h:4,
+                 from xml_sax_parser_context.c:1:
+/usr/include/ruby-2.0.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:32: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:47: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                               ^
+compiling xml_sax_push_parser.c
+In file included from /usr/include/ruby-2.0.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_sax_push_parser.h:4,
+                 from xml_sax_push_parser.c:1:
+/usr/include/ruby-2.0.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:32: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:47: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                               ^
+compiling xml_schema.c
+In file included from /usr/include/ruby-2.0.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_schema.h:4,
+                 from xml_schema.c:1:
+/usr/include/ruby-2.0.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:32: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:47: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                               ^
+compiling xml_syntax_error.c
+In file included from /usr/include/ruby-2.0.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_syntax_error.h:4,
+                 from xml_syntax_error.c:1:
+/usr/include/ruby-2.0.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:32: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:47: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                               ^
+compiling xml_text.c
+In file included from /usr/include/ruby-2.0.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_text.h:4,
+                 from xml_text.c:1:
+/usr/include/ruby-2.0.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:32: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:47: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                               ^
+compiling xml_xpath_context.c
+In file included from /usr/include/ruby-2.0.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_xpath_context.h:4,
+                 from xml_xpath_context.c:1:
+/usr/include/ruby-2.0.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:32: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:47: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                               ^
+compiling xslt_stylesheet.c
+In file included from /usr/include/ruby-2.0.0/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xslt_stylesheet.h:4,
+                 from xslt_stylesheet.c:1:
+/usr/include/ruby-2.0.0/ruby/ruby.h: In function ‘rb_float_value’:
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:32: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:777:41: warning: negative integer implicitly converted to unsigned type [-Wsign-conversion]
+      t.v = RUBY_BIT_ROTR((2 - b63) | (v & ~0x03), 3);
+                                         ^
+/usr/include/ruby-2.0.0/ruby/ruby.h:761:47: note: in definition of macro ‘RUBY_BIT_ROTR’
+ #define RUBY_BIT_ROTR(v, n) (((v) >> (n)) | ((v) << ((sizeof(v) * 8) - n)))
+                                               ^
+linking shared-object nokogiri/nokogiri.so
+Cleaning files only used during build.
+rm -rf /home/mayok/Project/rails_dir/imageuploader/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.6.2/ports/archives
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 nokogiri.so ./.gem.20150526-6730-4cbcbl/nokogiri
+installing default nokogiri libraries

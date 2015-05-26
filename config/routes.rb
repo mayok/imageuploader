@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :images, only: [:new, :create]
+  resources :images, only: [:create]
 
   #get 'static_pages/home'
 

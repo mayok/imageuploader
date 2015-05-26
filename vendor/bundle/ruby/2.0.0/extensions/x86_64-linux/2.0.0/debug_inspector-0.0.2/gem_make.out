@@ -1,0 +1,12 @@
+/usr/bin/ruby20 -r ./siteconf20150526-6730-zteplq.rb extconf.rb
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling debug_inspector.c
+linking shared-object debug_inspector.so
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 debug_inspector.so ./.gem.20150526-6730-1a9a9ye
+installing default debug_inspector libraries

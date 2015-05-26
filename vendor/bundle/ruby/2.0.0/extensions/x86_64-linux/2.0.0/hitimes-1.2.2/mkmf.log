@@ -1,0 +1,56 @@
+have_library: checking for clock_gettime() in -lrt... -------------------- yes
+
+"x86_64-pc-linux-gnu-gcc -o conftest -I/usr/include/ruby-2.0.0/x86_64-linux -I/usr/include/ruby-2.0.0/ruby/backward -I/usr/include/ruby-2.0.0 -I.    -O2 -march=native -pipe -fno-strict-aliasing -fPIC conftest.c  -L. -L/usr/lib64 -L. -Wl,-O1 -Wl,--as-needed -fstack-protector -rdynamic -Wl,-export-dynamic -Wl,--no-undefined     -lruby20  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return 0;
+6: }
+/* end */
+
+"x86_64-pc-linux-gnu-gcc -o conftest -I/usr/include/ruby-2.0.0/x86_64-linux -I/usr/include/ruby-2.0.0/ruby/backward -I/usr/include/ruby-2.0.0 -I.    -O2 -march=native -pipe -fno-strict-aliasing -fPIC conftest.c  -L. -L/usr/lib64 -L. -Wl,-O1 -Wl,--as-needed -fstack-protector -rdynamic -Wl,-export-dynamic -Wl,--no-undefined     -lruby20 -lrt  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+conftest.c: In function ‘t’:
+conftest.c:5:57: error: ‘clock_gettime’ undeclared (first use in this function)
+ int t(void) { void ((*volatile p)()); p = (void ((*)()))clock_gettime; return 0; }
+                                                         ^
+conftest.c:5:57: note: each undeclared identifier is reported only once for each function it appears in
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int t(void) { void ((*volatile p)()); p = (void ((*)()))clock_gettime; return 0; }
+ 6: int main(int argc, char **argv)
+ 7: {
+ 8:   if (argc > 1000000) {
+ 9:     printf("%p", &t);
+10:   }
+11: 
+12:   return 0;
+13: }
+/* end */
+
+"x86_64-pc-linux-gnu-gcc -o conftest -I/usr/include/ruby-2.0.0/x86_64-linux -I/usr/include/ruby-2.0.0/ruby/backward -I/usr/include/ruby-2.0.0 -I.    -O2 -march=native -pipe -fno-strict-aliasing -fPIC conftest.c  -L. -L/usr/lib64 -L. -Wl,-O1 -Wl,--as-needed -fstack-protector -rdynamic -Wl,-export-dynamic -Wl,--no-undefined     -lruby20 -lrt  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int t(void) { clock_gettime(); return 0; }
+ 6: int main(int argc, char **argv)
+ 7: {
+ 8:   if (argc > 1000000) {
+ 9:     printf("%p", &t);
+10:   }
+11: 
+12:   return 0;
+13: }
+/* end */
+
+--------------------
+
