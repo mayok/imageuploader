@@ -7,7 +7,17 @@
   </script>
   <%= form_for(@image, :html => {:multipart => true}) do |f| %>
     <%= f.file_field :files, style: "display: none" %>
-    <%= f.text_field :comment %>
+
+    <%= f.label :title, class: "input-filed" do %>
+      タイトル
+      <%= f.text_field :title %>
+    <% end %>
+
+    <%= f.label :caption, class: "input-filed" do %>
+      キャプション
+      <%= f.text_field :caption %>
+    <% end %>
+
     <%= f.submit "投稿する", class: "btn" %>
   <% end %>
   <script type="text/javascript">
