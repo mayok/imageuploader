@@ -1,0 +1,27 @@
+<div class="form-container">
+  <a href="#" id="dummy-btn" class="btn btn-lg">ファイルを選択</a>
+  <script type="text/javascript">
+  $('#dummy-btn').on('click', function(){
+    $('#image_files').click()
+  });
+  </script>
+  <%= form_for(@image, :html => {:multipart => true}) do |f| %>
+    <%= f.file_field :files, style: "display: none" %>
+    <%= f.text_field :comment %>
+    <%= f.submit "投稿する", class: "btn" %>
+  <% end %>
+  <script type="text/javascript">
+  $(function(){
+    $('input:submit').attr('disabled', true);
+    $('input:file').change(
+        function(){
+          if($(this).val()) {
+            $('input:submit').removeAttr('disabled');
+          }
+          else {
+            $('input:submit').attr('disabled', true);
+          }
+        });
+  });
+  </script>
+</div>
