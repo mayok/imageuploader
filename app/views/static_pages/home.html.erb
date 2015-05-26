@@ -3,6 +3,9 @@
 </div>
 <div class="row">
   <div class="col-md-2">
+    <% @images.each do |image| %>
+      <%= image_tag image.picture.url if image.picture? %>
+    <% end %>
   </div>
 </div>
 <div class="row">
