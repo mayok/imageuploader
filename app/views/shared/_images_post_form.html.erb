@@ -1,10 +1,10 @@
 <a href="#" id="dummy-btn" class="btn btn-lg">ファイルを選択</a>
 <script type="text/javascript">
 $('#dummy-btn').on('click', function(){
-  $('#image_files').click()
+  $('#image_picture').click()
 });
 </script>
-<%= form_for(@image, :html => {:multipart => true}) do |f| %>
+<%= form_for(@image, html: { multipart: true }) do |f| %>
   <%= f.file_field :picture, style: "display: none" %>
 
   <%= f.label :title, class: "input-field" do %>
