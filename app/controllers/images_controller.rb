@@ -1,4 +1,5 @@
 class ImagesController < ApplicationController
+
   def new
     @image = Image.new
   end
@@ -10,6 +11,13 @@ class ImagesController < ApplicationController
       redirect_to root_url
     else
       render 'new'
+    end
+  end
+
+  def show
+    @image = Image.find(params[:id])
+    respond_to do |format|
+      format.js
     end
   end
 

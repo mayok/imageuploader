@@ -45,9 +45,11 @@ input:not([type="submit"]) {
 }
 
 /* images */
-.thumbnail {
+.thumb {
+  margin: 0;
   li {
     float: left;
     margin: 0 2px;
+    list-style: none;
   }
 }

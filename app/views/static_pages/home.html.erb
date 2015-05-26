@@ -5,18 +5,33 @@
   <% end %>
 </div>
 <div class="row">
-  <div class="col-md-2">
-    <ul class="thumbnail">
+  <div class="col-md-3">
+    <ul class="thumb">
     <% @images.each do |image| %>
-      <li><a href="#">
-        <%= image_tag image.picture.thumb.url if image.picture? %>
-      </a></li>
+      <li>
+        <%= image_tag image.picture.thumb.url, id: "#{image.id}", style: "cursor: pointer;" %>
+      </li>
     <% end %>
     </ul>
   </div>
-</div>
-<div class="row">
-  <div class="col-md-10">
+  <div class="col-md-9">
+    <div id="image"></div>
   </div>
 </div>
 
+<script type="text/javascript">
+$(".thumb img").on("click", function(){
+  url = "images/" + $(this).attr("id");
+  $.ajax({
+    url: url,
+    type: "GET",
+    dataType: "script",
+    success: function(data){
+      console.log(data);
+      console.log("success:");
+    },
+    error: function(data){
+    }
+  });
+});
+</script>
