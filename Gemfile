@@ -9,11 +9,11 @@ gem 'turbolinks',    '2.3.0'
 gem 'jbuilder',      '2.2.3'
 gem 'carrierwave',   '0.10.0'
 gem 'mini_magick',   '3.8.0'
-gem 'sdoc',          '0.4.0', group: :doc
 
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-
+group :doc do
+  # bundle exec rake doc:rails generates the API under doc/api.
+  gem 'sdoc', '0.4.0' , require: false
+end
 
 group :development, :test do
   gem 'sqlite3',     '1.3.9'
