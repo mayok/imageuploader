@@ -14,7 +14,7 @@ development:
   <<: *default
   database: uploader_development
   username: mayok
-  password: password
+  password: <%= ENV['DATABASE_PASSWORD_FOR_DEVELOPMENT'] %>
   host: localhost
 
 # Warning: The database defined as "test" will be erased and
