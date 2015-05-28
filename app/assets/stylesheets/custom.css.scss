@@ -21,6 +21,29 @@ body {
   }
 }
 
+.alert-wrapper {
+  position: relative;
+}
+.alert {
+  position: absolute;
+  width: 300px;
+  border-radius: 8px;
+  bottom: 50%;
+  right: 50%;
+  transform: translate(50%, 50%);
+  z-index: 1050;
+}
+.modal-off {
+  visibility: hidden;
+  animation: fadeout 5s ease 0s 1 normal;
+}
+@keyframes fadeout {
+  0% { visibility: visible; margin-bottom: 22px; }
+  20% { visibility: visible; margin-bottom: 22px; }
+  100% { visibility: hidden; margin-bottom: 150px; }
+}
+
+
 
 /* typography */
 h1, h2, h3, h4, h5 {
