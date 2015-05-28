@@ -18,4 +18,4 @@ public/uploads
 !/log/.keep
 /tmp
 .env
-..openshift/*
+.openshift/*
