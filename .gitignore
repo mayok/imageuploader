@@ -18,5 +18,3 @@ public/uploads
 !/log/.keep
 /tmp
 .env
-.openshift/*
-!.openshift/action_hooks/deploy
