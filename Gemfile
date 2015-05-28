@@ -11,7 +11,6 @@ gem 'turbolinks',    '2.3.0'
 gem 'jbuilder',      '2.2.3'
 gem 'carrierwave',   '0.10.0'
 gem 'mini_magick',   '3.8.0'
-gem 'pg',              '0.17.1'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -19,6 +18,7 @@ group :doc do
 end
 
 group :development, :test do
+  gem 'mysql2'
   gem 'byebug',      '3.4.0'
   gem 'web-console', '~> 2.0.0.beta3'
   gem 'spring',      '1.1.3'
@@ -31,6 +31,7 @@ group :test do
 end
 
 group :production do
+  gem 'pg',              '0.17.1'
   gem 'rails_12factor',  '0.0.2'
 end
 
