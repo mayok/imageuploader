@@ -35,11 +35,11 @@ body {
 }
 .modal-off {
   visibility: hidden;
-  animation: fadeout 5s ease 0s 1 normal;
+  animation: fadeout 4.2s ease 0s 1 normal;
 }
 @keyframes fadeout {
   0% { visibility: visible; margin-bottom: 22px; }
-  20% { visibility: visible; margin-bottom: 22px; }
+  77% { visibility: visible; margin-bottom: 22px; }
   100% { visibility: hidden; margin-bottom: 150px; }
 }
 
