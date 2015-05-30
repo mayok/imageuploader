@@ -19,6 +19,8 @@ $('#dummy-btn').on('click', function(){
 
   <%= f.submit "投稿する", class: "btn" %>
 <% end %>
+
+<!-- ファイルが選択されたら、submit ボタンを有効にする -->
 <script type="text/javascript">
 $(function(){
   $('input:submit').attr('disabled', true);
@@ -26,6 +28,12 @@ $(function(){
       function(){
         if($(this).val()) {
           $('input:submit').removeAttr('disabled');
+          var reader = new FileReader();
+          reader.onload = function(){
+            var img_src = $('<img>').attr('src', reader.result);
+            $('#dummy-btn').empty().prepend(img_src);
+          }
+          reader.readAsDataURL($(this).prop('files')[0]);
         }
         else {
           $('input:submit').attr('disabled', true);

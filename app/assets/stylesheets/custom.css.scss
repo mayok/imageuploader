@@ -76,3 +76,7 @@ input:not([type="submit"]) {
     list-style: none;
   }
 }
+
+#dummy-btn img {
+  max-height: 200px;
+}
