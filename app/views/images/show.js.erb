@@ -1,3 +1,3 @@
 $('#image').empty().append('<%= j image_tag @image.picture.url %>')
-$('.title').empty().append('<%= j @image.title %>')
-$('.caption').empty().append('<%= j @image.caption %>')
+$('.title').empty().append('<% if @image.title? %><h2><%= j @image.title %></h2><% end %>')
+$('.caption').empty().append('<% if @image.caption? %><span><%= j @image.caption %></span><% end %>')
