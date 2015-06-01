@@ -25,5 +25,11 @@ module ImageUpoader
 
     # CarrierWave
     config.autoload_paths += %W(#{config.root}/app/uploaders)
+
+    #i18n
+    config.i18n.load_path += Dir[Rails.root.join('config','locales', '**', '*.yml').to_s]
+    config.i18n.available_locales = [:ja, :en]
+    config.i18n.enforce_available_locales = true
+    config.i18n.default_locale = :en
   end
 end

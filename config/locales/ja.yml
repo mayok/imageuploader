@@ -19,13 +19,13 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
+ja:
   hello: "Hello world"
-  upload: "Upload"
-  home: "Home"
-  login: "Log in"
-  default_message: "there are no images."
-  title: "Title"
-  caption: "Description"
-  submit: "Submit"
-  selectFiles: "Select files"
+  upload: "作品投稿"
+  home: "ホーム"
+  login: "ログイン"
+  default_message: "ここに画像が表示されます"
+  title: "タイトル"
+  caption: "キャプション"
+  submit: "投稿する"
+  selectFiles: "ファイル選択"

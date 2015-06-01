@@ -1,4 +1,4 @@
-<a href="#" id="dummy-btn" class="btn btn-lg">ファイルを選択</a>
+<a href="#" id="dummy-btn" class="btn btn-lg"><%= t('selectFiles') %></a>
 <script type="text/javascript">
 $('#dummy-btn').on('click', function(){
   $('#image_picture').click()
@@ -8,16 +8,16 @@ $('#dummy-btn').on('click', function(){
   <%= f.file_field :picture, style: "display: none" %>
 
   <%= f.label :title, class: "input-field" do %>
-    タイトル
+    <%= t('title') %>
     <%= f.text_field :title %>
   <% end %>
 
   <%= f.label :caption, class: "input-field" do %>
-    キャプション
+    <%= t('caption') %>
     <%= f.text_field :caption %>
   <% end %>
 
-  <%= f.submit "投稿する", class: "btn" %>
+  <%= f.submit t('submit'), class: "btn" %>
 <% end %>
 
 <!-- ファイルが選択されたら、submit ボタンを有効にする -->
