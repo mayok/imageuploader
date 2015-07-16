@@ -25,7 +25,8 @@
       </div>
     </div>
   </div>
-  <div class="col-md-6">
+  <div class="col-md-3">
+    <ul id="comments"></ul>
   </div>
 </div>
 
@@ -37,8 +38,6 @@ $(".thumb img").on("click", function(){
     type: "GET",
     dataType: "script",
     success: function(data){
-      console.log(data);
-      console.log("success:");
     },
     error: function(data){
     }

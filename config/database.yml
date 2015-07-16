@@ -16,7 +16,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: uploader_test
+  database: db/uploader_test.sqlite3
 
 ###
 ### For openshift environment
