@@ -23,6 +23,7 @@ ja:
   hello: "Hello world"
   upload: "作品投稿"
   home: "ホーム"
+  signup: "新規登録"
   login: "ログイン"
   default_message: "ここに画像が表示されます"
   title: "タイトル"

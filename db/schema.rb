@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150526102534) do
+ActiveRecord::Schema.define(version: 20150716033222) do
 
   create_table "images", force: :cascade do |t|
     t.text     "caption"
@@ -23,5 +23,12 @@ ActiveRecord::Schema.define(version: 20150526102534) do
   end
 
   add_index "images", ["created_at"], name: "index_images_on_created_at"
+
+  create_table "users", force: :cascade do |t|
+    t.string   "name"
+    t.string   "email"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
 end

@@ -23,6 +23,7 @@ en:
   hello: "Hello world"
   upload: "Upload"
   home: "Home"
+  signup: "Sign up"
   login: "Log in"
   default_message: "there are no images."
   title: "Title"
