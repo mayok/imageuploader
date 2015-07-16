@@ -15,7 +15,7 @@ gem 'rails-i18n',    '~> 4.0.0'
 
 
 group :development, :test do
-  gem 'mysql2'
+  gem 'sqlite3'
   gem 'dotenv-rails'
   gem 'byebug',      '3.4.0'
   gem 'web-console', '~> 2.0.0.beta3'

@@ -14,14 +14,14 @@
 ActiveRecord::Schema.define(version: 20150526102534) do
 
   create_table "images", force: :cascade do |t|
-    t.text     "caption",    limit: 65535
-    t.integer  "star",       limit: 4,     default: 0
-    t.datetime "created_at",                           null: false
-    t.datetime "updated_at",                           null: false
-    t.string   "picture",    limit: 255
-    t.string   "title",      limit: 255
+    t.text     "caption"
+    t.integer  "star",       default: 0
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+    t.string   "picture"
+    t.string   "title"
   end
 
-  add_index "images", ["created_at"], name: "index_images_on_created_at", using: :btree
+  add_index "images", ["created_at"], name: "index_images_on_created_at"
 
 end
