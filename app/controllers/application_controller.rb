@@ -15,6 +15,10 @@ class ApplicationController < ActionController::Base
     end
 
     def extract_from_accept_language_header
-      request.env['HTTP_ACCEPT_LANGUAGE'].scan(/^[a-z]{2}/).first
+      begin
+        request.env['HTTP_ACCEPT_LANGUAGE'].scan(/^[a-z]{2}/).first
+      rescue
+        'es'
+      end
     end
 end
