@@ -1,7 +1,7 @@
 <a href="#" id="dummy-btn" class="btn btn-lg"><%= t('selectFiles') %></a>
 <script type="text/javascript">
 $('#dummy-btn').on('click', function(){
-  $('#image_picture').click()
+  $('#image_picture').click();
 });
 </script>
 <%= form_for(@image, html: { multipart: true }) do |f| %>
@@ -39,5 +39,12 @@ $(function(){
           $('input:submit').attr('disabled', true);
         }
       });
+
+  $('input:submit').on('click', function() {
+    if( $('input:file').val() ) {
+      $('#new_image').submit();
+      $('input:submit').attr('disabled', true);
+    }
+  })
 });
 </script>
